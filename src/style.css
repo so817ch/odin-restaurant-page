@@ -1,0 +1,92 @@
+@font-face {
+  font-family: 'moms typewriter';
+  src: url('./font/momstypewriter-webfont.woff2') format('woff2'),
+    url('./font/momstypewriter-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --navbar-height: 70px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'moms typewriter', Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  min-width: max-content;
+}
+
+nav {
+  height: var(--navbar-height);
+  display: grid;
+  grid-template: 50px / repeat(3, 100px);
+  gap: 20px;
+  justify-content: center;
+  align-content: end;
+  background-color: #4E220F;
+}
+
+nav button {
+  border: 1px solid #000;
+  border-radius: 5px 5px 0 0;
+  border-bottom: 0;
+  font-size: 1rem;
+  font-family: inherit;
+  background-color: #827148;
+  color: white;
+}
+
+nav button.checked {
+  background-color: #9D6638;
+  letter-spacing: 2px;
+}
+
+#content {
+  background-color: #B0BA99;
+  min-height: calc(100vh - var(--navbar-height));
+  padding: 50px;
+}
+
+h1,
+.card {
+  background-color: #F7F1DE;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+h1 {
+  width: max-content;
+  margin-inline: auto;
+  margin-bottom: 75px;
+  padding-inline: 40px;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: 400px;
+  gap: 30px;
+  justify-content: center;
+}
+
+.card p:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+p.p-large {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+p.p-right {
+  text-align: right;
+}
+
+p.p-center {
+  text-align: center;
+}

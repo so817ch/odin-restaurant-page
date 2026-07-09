@@ -1,0 +1,28 @@
+{
+  "name": "odin-restaurant-page",
+  "version": "1.0.0",
+  "description": "odin restaurant page as npm and webpack practice",
+  "homepage": "https://github.com/so817ch/odin-restaurant-page#readme",
+  "bugs": {
+    "url": "https://github.com/so817ch/odin-restaurant-page/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/so817ch/odin-restaurant-page.git"
+  },
+  "license": "ISC",
+  "author": "so817ch",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "css-loader": "^7.1.4",
+    "html-webpack-plugin": "^5.6.7",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.108.4",
+    "webpack-cli": "^7.2.1",
+    "webpack-dev-server": "^6.0.0"
+  }
+}
